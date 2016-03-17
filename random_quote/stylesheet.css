@@ -1,0 +1,48 @@
+body {
+  text-align: center;
+  font-family: "Helvetica", Arial, sans-serif;
+  /*background-color: white*/
+}
+
+.container {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 25px 20px 25px 20px;
+  width: 500px;
+  height: 250px;
+  border: 1px black solid;
+}
+
+.random {
+  position: relative;
+  background-color: #ccc;
+}
+
+.buttons {
+  padding: 0px;
+}
+
+.buttons li {
+  /* removes the bullet points*/
+  display: inline;
+}
+
+h2 {}
+
+.random {
+  padding: 10px;
+  border: 0px solid black;
+  margin: auto;
+}
+
+button {}
+
+.author {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+}
