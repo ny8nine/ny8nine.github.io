@@ -2,60 +2,64 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <link href="css/stylesheet.css" rel="stylesheet">
+  <link href="stylesheet.css" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <title>Nyasha Hamilton</title>
 
 </head>
   <body>
-<!-- Navigation Bar -->
-    <div>
-      <ul class = "bar">
-            <li class = "left"><a href="#home">Home</a></li>
-            <li class = "left"> <a href="#about">About</a></li>
-            <li class = "left"><a href="#portfolio">Portfolio</a></li>
-            <li class = "left"><a href="#contact">Contact</a></li>
-            <li class = "right"><a href="http://www.twitter.com/ny8nine"><i class="fa fa-twitter"></i></a></li>
-            <li class = "right"><a href="https://github.com/ny8nine"><i class="fa fa-github"></i></a></li>
-            <li class = "right"><a href="https://www.linkedin.com/in/NyashaHamilton"><i class="fa fa-linkedin-square"></i></a></li>
-            <li class = "right"><a href="https://www.instagram.com/ny8nine/"><i class="fa fa-instagram"></i></a></li>
-          </ul>
-      </ul>
-    </div>
-    <!--Home-->
-    <div id="home">
-      <h1>Hi, I'm Nyasha Hamilton!</h1>
-    </div>
-    <!--About-->
-    <div id="about">
-      I make stuff for the internet!
-    </div>
-    <!--Portfolio-->
-    <div id="portfolio">
-      <h2>Portfolio</h2>
-      <ul class = "projects">
-        <li><a href="random_quote">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Quotation_Marks.svg/200px-Quotation_Marks.svg.png" alt="" class = "port_img"/>
-         <br/>Random Quote</a> </li>
-        <li><a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/Surface_analysis.gif" alt="" class = "port_img"/>
-         <br/>Local Weather</a></li>
-        <li><a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/b/b3/Wikipedia-logo-v2-en.svg" alt="" class = "port_img"/>
-         <br/>WikiPageViewer</a></li>
-        <li><a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/2/28/TI-68.jpg" alt="" class = "port_img"/>
-         <br/>Calculator</a></li>
-        <li><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/US_state_outline_map.png/320px-US_state_outline_map.png" alt="" class = "port_img"/>
-         <br/><a href="http://www.ny8nine.com/racebystate/">Race Distribution by State</a></li>
-      </ul>
-    </div>
-    <!-- Contact -->
-    <div id="contact">
-      <h2>Contact</h2>
-      <ul class = "bar">
-        <li class = "left"><a href="http://www.twitter.com/ny8nine">Twitter</a></li>
-        <li class = "left"><a href="https://github.com/ny8nine">Github</a></li>
-        <li class = "left"><a href="https://www.linkedin.com/in/NyashaHamilton">LinkedIn</a></li>
-        <li class = "left"><a href="https://www.instagram.com/ny8nine/">Instagram</i></a></li>
-      </ul>
+    <div class="container">
+      <!-- Navigation Bar -->
+      <div>
+        <ul class = "bar color">
+              <li class = "left"><a href="#home">Home</a></li>
+              <li class = "left"> <a href="#about">About</a></li>
+              <li class = "left"><a href="#projects">Projects</a></li>
+              <li class = "left"><a href="#contact">Contact</a></li>
+              <li class = "right"><a href="http://www.twitter.com/ny8nine"><i class="fa fa-twitter"></i></a></li>
+              <li class = "right"><a href="https://github.com/ny8nine"><i class="fa fa-github"></i></a></li>
+              <li class = "right"><a href="https://www.linkedin.com/in/NyashaHamilton"><i class="fa fa-linkedin-square"></i></a></li>
+              <li class = "right"><a href="https://www.instagram.com/ny8nine/"><i class="fa fa-instagram"></i></a></li>
+            </ul>
+        </ul>
+      </div>
+      <!--Home-->
+      <div id="home">
+        <h1>Hi, I'm <b class = "color">Nyasha Hamilton</b>!</h1>
+      </div>
+      <!--About-->
+      <div id="about">
+        I make stuff for the internet!
+      </div>
+      <!--Projects-->
+      <div id="portfolio">
+        <h2>Projects</h2>
+        <ul class = "projects">
+          <li><a href="random_quote">
+            <object data="portfolio_images/quote.svg" type="image/svg+xml" class = "port_img">Quote</object>
+            <br/>Random Quote</a> </li>
+          <li><a href="local_weather">
+            <object data="portfolio_images/weather.svg" type="image/svg+xml" class = "port_img">Weather</object>
+            <br/>Local Weather</a></li>
+          <li><a href="#">
+            <object data="portfolio_images/calculator.svg" type="image/svg+xml" class = "port_img">Calculator</object>
+            <br/>Calculator</a></li>
+          <li><a href="race_by_state">
+            <object data="portfolio_images/usa.svg" type="image/svg+xml" class = "port_img">Race by State</object>
+            <!-- <img src="portfolio_images/usa.svg" alt="" class = "port_img"/> -->
+            <br/>Race Distribution by State</a></li>
+        </ul>
+      </div>
+      <!-- Contact -->
+      <div id="contact" >
+        <ul class = "bar color">
+          <li class="left"><a href="http://www.twitter.com/ny8nine">Twitter</a></li>
+          <li class="left"><a href="https://github.com/ny8nine">Github</a></li>
+          <li class="left"><a href="https://www.linkedin.com/in/NyashaHamilton">LinkedIn</a></li>
+          <li class="left"><a href="https://www.instagram.com/ny8nine/">Instagram</a></li>
+          <li class="right">New color</li>
+        </ul>
+      </div>
     </div>
   </body>
 </html>

@@ -1,0 +1,63 @@
+body{
+    font-family: "Helvetica", Arial, sans-serif;
+    text-align: 
+}
+
+.container{
+    postion: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.port_img{
+  border:1px solid black;
+  width: 300px;
+  height: 300px;
+  padding: 5px;
+  margin: 5px;
+}
+
+.bar{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    text-align: center;
+}
+
+.bar li.left {
+    float: left;
+}
+
+.bar li.right {
+    float: right;
+}
+
+.color, .color a{
+    color: #0ddeff;
+}
+
+.bar li{
+    display: inline-block;
+    padding: 14px 16px;
+    text-decoration: none; /*no underline on links*/
+}
+ 
+.projects {
+    list-style-type: none;
+    overflow: hidden;
+}
+
+.projects a{
+    float: left;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    display: block; /*to make the object work as links*/
+    z-index: 1; /*to make the object work as links*/
+}
+.projects object{
+    z-index: -1; /*to make the object work as links*/
+    pointer-events: none; /*to make the object work as links*/
+}

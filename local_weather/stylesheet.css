@@ -1,0 +1,32 @@
+body{
+  text-align: center;
+  font-family: "Helvetica","Arial", san-serif;
+  background-color: #9BDDFF;
+  color:  #5C5858;
+}
+
+.container{
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 25px 20px 25px 20px;
+  width: 500px;
+  height: 250px;
+}
+.location{
+  font-family: 'Carrois Gothic SC', sans-serif;
+  font-size: 3em;
+}
+
+.weather{
+  font-size: 6em;
+}
+
+.author {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+}

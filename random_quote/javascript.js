@@ -39,6 +39,6 @@ $(function() {
 
   //click "Tweet this" to tweet the quote in the 'twitter' variable 
   $("#tweet").on("click", function() {
-    window.open(twitter);
+    window.open(twitter, "Tweet this!", "width=500, height=260");
   });
 });
