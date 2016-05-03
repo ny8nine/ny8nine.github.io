@@ -11,8 +11,8 @@ body{
 
 .port_img{
   border:1px solid black;
-  width: 300px;
-  height: 300px;
+  width: 150px;
+  height: 150px;
   padding: 5px;
   margin: 5px;
 }
@@ -34,14 +34,19 @@ body{
     float: right;
 }
 
-.color, .color a{
-    color: #0ddeff;
+.color, a{
+    color: #67D5B5;
+    text-decoration: none;
 }
+
+.image{
+    fill: #67D5B5;
+}
+
 
 .bar li{
     display: inline-block;
     padding: 14px 16px;
-    text-decoration: none; /*no underline on links*/
 }
  
 .projects {

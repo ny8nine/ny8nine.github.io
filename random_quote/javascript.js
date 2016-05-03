@@ -1,11 +1,10 @@
 //array of quotes
 var quoteArr = [
-  "Never mistake motion for action.<br><br> – Ernest Hemingway",
-  "You will never find time for anything. If you want time, you must make it.<br><br> – Charles Buxton",
-  "Yesterday’s home runs don’t win today’s games.<br><br> – Babe Ruth",
-  "Self-made or never made!<br><br> – Orison Swett Maden",
-  "Freedom lies in being bold.<br><br> – Robert Frost",
-  "Show up. <br>Be Seen. <br>Live Brave.<br><br> – Brene Brown"
+	"Why did the scarecrow win the Nobel Prize? <br><br>Because he was out standing in his field!",
+  "What's the difference between ignorance and apathy?<br><br> I don't konw and I don't care.",
+  "Where did George Washington keep his armies?<br><br>In his sleevies!",
+  "What do you get when you cross a joke with a rhetorical question?",
+  "What do you get when you put root beer in a square glass? <br><br>Beer",
 ];
 
 var randnum = 0;
