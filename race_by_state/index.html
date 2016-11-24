@@ -2,9 +2,6 @@
 <html>
   <head>
     <title>Race by State</title>
-  </head>
-  <body>
-
     <style>
       body{
         font: 10px sans-serif
@@ -36,9 +33,9 @@
         width:800px;
         margin: 0 auto;
       }
-
-
     </style>
+  </head>
+  <body>
   <div id = "container">
     <div id="header" class ="center">
       <h1> Race in America</h1>
@@ -90,32 +87,32 @@
               //STACK DATA
                 var data = d3.layout.stack()(races.map(function(race) {
                   return data.map(function(d) {
-                      return { x: d.State, y: d[race] 
+                      return { x: d.State, y: d[race]
                       };
                     });
-                })); 
+                }));
 
               //find data max
                 var xGroupMax = d3.max(data, function(layer) { return d3.max(layer, function(d) { return d.y; }); });
                 var xStackMax = d3.max(data, function(layer) { return d3.max(layer, function(d) { return d.y0 + d.y; }); });
-              
-              //VARIABLES    
+
+              //VARIABLES
                 var color = d3.scale.category10();
                 color.domain (d3.keys(data[0]).filter(function(key){return key !== "State";}))
 
                 var y = d3.scale.ordinal()
                   .rangeRoundBands([0,height], 0.1);
-                
+
                 y.domain(data.map(function(d) { return d.State; }));
-              
+
               //XSCALE
                 var xscale = d3.scale.linear()
                    .domain([0, xStackMax])
                    .range([0, width]);
 
               //Group to move chart
-                var group = svg.append("g") 
-                   .attr("transform", "translate(" + [margin.left, margin.top] + ")") 
+                var group = svg.append("g")
+                   .attr("transform", "translate(" + [margin.left, margin.top] + ")")
 
               //layers for each race
                 var layers = group.selectAll("g")
@@ -123,7 +120,7 @@
                  .enter()
                  .append("g")
                  .style({
-                   fill: function(d,i) { return color(i) }  
+                   fill: function(d,i) { return color(i) }
                  })
               //each state withinn race
                 var stacks = layers.selectAll("rect")
@@ -159,7 +156,7 @@
                   .enter().append("g")
                     .attr(
                       "transform", function(d, i) {
-                        return "translate(" +[width + margin.left +5, (i * 21)+margin.top] + ")"; 
+                        return "translate(" +[width + margin.left +5, (i * 21)+margin.top] + ")";
                       });
 
                   legend.append("rect")
@@ -192,8 +189,8 @@
                 group.append("g")
                     .attr("transform", "translate(0," + height + ")")
                   .attr("class", "axis")
-                    .call(xAxisBottom);              
-            });  
+                    .call(xAxisBottom);
+            });
         </script>
     <div id="caption" class = "center">
       <h4>Source: Census Bureau Year 2014</h4>
