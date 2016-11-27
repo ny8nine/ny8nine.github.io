@@ -1,12 +1,11 @@
 body{
-    font-family: "Helvetica", Arial, sans-serif;
-    text-align:
+  font-family: "Helvetica", Arial, sans-serif;
 }
 
 .container{
-    postion: relative;
-    max-width: 800px;
-    margin: 0 auto;
+  postion: relative;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .project {
@@ -39,19 +38,19 @@ body{
     text-align: center;
 }
 
+.bar li{
+    display: inline-block;
+    padding: 14px 16px;
+}
 
 .bar li.right {
     float: right;
 }
+
 a{
   text-decoration: none;
 }
 
 .color, a{
     color: #67D5B5;
-}
-
-.bar li{
-    display: inline-block;
-    padding: 14px 16px;
 }
