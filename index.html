@@ -10,64 +10,75 @@
 </head>
   <body>
     <div class="container">
-      <div><!-- Navigation Bar -->
-        <ul class = "color bar">
-              <li class = "left"><a href="#home">Home</a></li>
-              <li class = "left"> <a href="#about">About</a></li>
-              <li class = "left"><a href="#projects">Projects</a></li>
-              <li class = "left"><a href="#contact">Contact</a></li>
-              <li class = "right"><a href="http://www.twitter.com/ny8nine"><i class="fa fa-twitter"></i></a></li>
-              <li class = "right"><a href="https://github.com/ny8nine"><i class="fa fa-github"></i></a></li>
-              <li class = "right"><a href="https://www.linkedin.com/in/NyashaHamilton"><i class="fa fa-linkedin-square"></i></a></li>
-              <li class = "right"><a href="https://www.instagram.com/ny8nine/"><i class="fa fa-instagram"></i></a></li>
-            </ul>
-        </ul>
-      </div><!-- Navigation Bar -->
       <div id="home">
         <h1>Hi, I'm <b class = "color">Nyasha Hamilton</b>!</h1>
       </div><!--home-->
 
       <div id="about">
-        I like making stuff for the web <span class = "color"> :)</span>
+        I like making stuff for the web <b class = "color"> :)</b>. I am of the am one of the Leads for both the Front End and Ruby on Rails  communites within the awesome Women Who Code DC organization.
       </div><!--about-->
 
       <div id="portfolio">
         <h2>Projects</h2>
-        <ul class = "projects">
-          <li class = "port_img"><a href="http://www.ny8nine.com/random_pun/">
-            <i class="fa fa-comments fa-5x" aria-hidden="true"></i>
-            <br/>Random Joke</a>
-          </li>
-          <!-- <li class = "port_img"><a href="local_weather">
-            <i class="fa fa-thermometer-half fa-5x" aria-hidden="true"></i>
-            <br/>Local Weather</a>
-          </li> -->
-          <li class = "port_img"><a href="#">
-            <i class="fa fa-train fa-5x" aria-hidden="true"></i>
-            <br/>Metro Prices</a>
-          </li>
-          <li class = "port_img"><a href="http://www.ny8nine.com/racebystate/">
-            <i class="fa fa-bar-chart fa-5x" aria-hidden="true"></i>
-            <br/>Race by State</a>
-          </li>
-          <li class = "port_img"><a href="https://nyasha-timesheet.herokuapp.com/">
-            <i class="fa fa-clock-o fa-5x" aria-hidden="true"></i>
-            <br/>Timesheet</a>
-          </li>
-        </ul>
-      </div>
+        <div class = "project"><!-- random pun -->
+          <div class = "port_img">
+            <a href="http://www.ny8nine.com/random_pun/">
+              <i class="fa fa-comments fa-5x" aria-hidden="true"></i>
+              Random Joke
+            </a>
+          </div>
+          <div class="description">
+            As a lover of terrible jokes, here are a few of my favorites. I used javascript to wait a few seconds before displaying the puchline!
+          </div>
+        </div><!-- random pun -->
+
+        <div class = "project"><!-- metro prices -->
+          <div class = "port_img">
+            <a href="http://www.ny8nine.com/wmata_prices/">
+              <i class="fa fa-train fa-5x" aria-hidden="true"></i>
+              Metro Prices
+            </a>
+          </div>
+          <div class="description">
+            A quick check to help me decide, am  I willing to pay metro fare to get there faster or should I just take the bus.
+          </div>
+        </div><!-- metro prices -->
+
+        <div class = "project"><!-- race by state -->
+          <div class = "port_img">
+            <a href="http://www.ny8nine.com/racebystate/">
+              <i class="fa fa-bar-chart fa-5x" aria-hidden="true"></i>
+              Race by state
+            </a>
+          </div>
+          <div class="description">
+            Trying to teach myself d3.js I made a bar chart that breaks down the distrubtion of race in state. Data is from the 2014 Census.
+          </div>
+        </div><!-- race by state -->
+
+        <div class = "project"><!-- timesheet -->
+          <div class = "port_img">
+            <a href="https://nyasha-timesheet.herokuapp.com/">
+              <i class="fa fa-clock-o fa-5x" aria-hidden="true"></i>
+                Timesheet
+            </a>
+          </div>
+          <div class="description">
+            Final project for General Assembly Javascript certifcation.
+            I build a application that will track when you clock in and out using and Amazon IoT button.
+          </div>
+        </div><!-- timesheet -->
+
 
       <div id="contact" >
         <ul class = "color bar">
-          <li class="left"><a href="http://www.twitter.com/ny8nine">Twitter</a></li>
-          <li class="left"><a href="https://github.com/ny8nine">Github</a></li>
-          <li class="left"><a href="https://www.linkedin.com/in/NyashaHamilton">LinkedIn</a></li>
-          <li class="left"><a href="https://www.instagram.com/ny8nine/">Instagram</a></li>
-          <li class="right"><div id="paintbrush" onclick = "myFunction();" ><i class="fa fa-paint-brush"></i></div></li>
+          <li><a href="http://www.twitter.com/ny8nine"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="https://github.com/ny8nine"><i class="fa fa-github"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/NyashaHamilton"><i class="fa fa-linkedin-square"></i></a></li>
+          <li><a href="https://www.instagram.com/ny8nine/"><i class="fa fa-instagram"></i></a></li>
+          <li class = "right"><div id="paintbrush"  ><i class="fa fa-paint-brush"></i></div></li>
         </ul>
       </div><!-- contact -->
-
-    </div><!--projects-->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
     <script src="javascript.js"></script>
