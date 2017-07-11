@@ -22,7 +22,12 @@ function changeColor() {
   for(var i=0; i<link.length; i++){
   	link[i].style.color=color;
   }
-}
 
+  var mySVG = document.getElementById('pokeball');
+  mySVG.addEventListener("load",function() {
+    mySVG.getSVGDocument().getElementById("svgInternalID").setAttribute("fill", color);
+  }, false);
+
+}
 
 window.onlaod = changeColor();
